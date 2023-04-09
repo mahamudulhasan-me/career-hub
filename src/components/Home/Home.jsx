@@ -1,15 +1,17 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 import Banner from "./Banner/Banner";
+import FeaturedJobs from "./FeaturedJobs/FeaturedJobs";
 import JobCategory from "./JobCategory/JobCategory";
 
 const Home = () => {
-  const availableJobs = useLoaderData();
-  console.log(availableJobs);
+  const featuredJobs = useLoaderData();
+
   return (
     <div>
       <Banner />
-      <JobCategory availableJobs={availableJobs} />
+      <JobCategory />
+      <FeaturedJobs featuredJobs={featuredJobs} />
     </div>
   );
 };

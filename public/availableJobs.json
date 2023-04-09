@@ -1,22 +1,22 @@
 [
   {
     "name": "Software Development",
-    "logo": "../src/assets/Icons/chip 1.png",
+    "logo": "./category-img/app-development.png",
     "jobs_available": 25
   },
   {
-    "name": "Marketing",
-    "logo": "https://shorten.world/gPwAb",
+    "name": "Digital Marketing",
+    "logo": "./category-img/social-media.png",
     "jobs_available": 10
   },
   {
     "name": "Data Science",
-    "logo": "https://shorten.world/-FeVZ",
+    "logo": "./category-img/data-science.png",
     "jobs_available": 15
   },
   {
-    "name": "Design",
-    "logo": "https://shorten.world/vGKaT",
+    "name": "Graphics Design",
+    "logo": "./category-img/graphic-design.png",
     "jobs_available": 8
   }
 ]
