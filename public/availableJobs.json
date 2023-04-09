@@ -6,17 +6,17 @@
   },
   {
     "name": "Marketing",
-    "logo": "../src/assets/Icons/chip 1.png",
+    "logo": "https://shorten.world/gPwAb",
     "jobs_available": 10
   },
   {
     "name": "Data Science",
-    "logo": "../src/assets/Icons/chip 1.png",
+    "logo": "https://shorten.world/-FeVZ",
     "jobs_available": 15
   },
   {
     "name": "Design",
-    "logo": "../src/assets/Icons/chip 1.png",
+    "logo": "https://shorten.world/vGKaT",
     "jobs_available": 8
   }
 ]

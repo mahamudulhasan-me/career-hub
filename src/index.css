@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+li {
+  @apply hover:text-rose-600;
+}
+.my-btn {
+  @apply bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-rose-400 via-indigo-500 to-indigo-600 px-3 py-2 font-semibold text-white rounded-md;
+}
