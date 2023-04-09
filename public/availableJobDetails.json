@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "company_logo": "https://example.com/logo1.png",
+    "job_title": "Software Engineer",
+    "company_name": "Acme Inc.",
+    "remote_or_onsite": "Remote",
+    "location": "Anywhere",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$100,000 - $120,000",
+    "job_description": "We are seeking a talented software engineer to join our team and help us build the next generation of software products.",
+    "job_responsibility": "Design, develop, and maintain software applications; Write clean, efficient, and well-documented code; Collaborate with cross-functional teams to identify and solve complex problems.",
+    "educational_requirements": "Bachelor's or Master's degree in Computer Science or a related field",
+    "experiences": "2+ years of experience in software engineering",
+    "contact_information": {
+      "phone": "+1-123-456-7890",
+      "email": "jobs@acme.com"
+    }
+  },
+  {
+    "id": 2,
+    "company_logo": "https://example.com/logo2.png",
+    "job_title": "Marketing Manager",
+    "company_name": "ABC Corp.",
+    "remote_or_onsite": "Onsite",
+    "location": "New York City",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$80,000 - $100,000",
+    "job_description": "We are seeking a creative and driven Marketing Manager to lead our marketing efforts and help us grow our brand.",
+    "job_responsibility": "Develop and implement marketing strategies; Conduct market research and analysis; Manage the company's online presence and social media accounts.",
+    "educational_requirements": "Bachelor's degree in Marketing or a related field",
+    "experiences": "5+ years of experience in marketing",
+    "contact_information": {
+      "phone": "+1-123-456-7890",
+      "email": "jobs@abccorp.com"
+    }
+  },
+  {
+    "id": 3,
+    "company_logo": "https://example.com/logo3.png",
+    "job_title": "Data Analyst",
+    "company_name": "XYZ Corp.",
+    "remote_or_onsite": "Remote",
+    "location": "Anywhere",
+    "fulltime_or_parttime": "Part-time",
+    "salary": "$50 - $70 per hour",
+    "job_description": "We are seeking a skilled Data Analyst to help us analyze large amounts of data and provide insights to the company.",
+    "job_responsibility": "Collect and analyze data; Develop and maintain databases; Create reports and visualizations to communicate insights.",
+    "educational_requirements": "Bachelor's or Master's degree in Data Science, Statistics, or a related field",
+    "experiences": "2+ years of experience in data analysis",
+    "contact_information": {
+      "phone": "+1-123-456-7890",
+      "email": "jobs@xyzcorp.com"
+    }
+  },
+  {
+    "id": 4,
+    "company_logo": "https://example.com/logo4.png",
+    "job_title": "Graphic Designer",
+    "company_name": "123 Designs",
+    "remote_or_onsite": "Onsite",
+    "location": "Los Angeles",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$60,000 - $80,000",
+    "job_description": "We are seeking a talented Graphic Designer to join our team and help us create stunning visual designs for our clients.",
+    "job_responsibility": "Design and produce various marketing materials; Work with clients to understand their design needs and preferences; Collaborate with the creative team to brainstorm ideas and concepts.",
+    "educational_requirements": "Bachelor's degree in Graphic Design or a related field",
+    "experiences": "3+ years of experience in graphic design",
+    "contact_information": {
+      "phone": "+1-123-456-7890",
+      "email": "jobs@123designs.com"
+    }
+  },
+  {
+    "id": 5,
+    "company_logo": "https://example.com/logo5.png",
+    "job_title": "Sales Representative",
+    "company_name": "Sunrise Inc.",
+    "remote_or_onsite": "Onsite",
+    "location": "Miami",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$50,000 - $70,000",
+    "job_description": "We are seeking a highly motivated Sales Representative to help us expand our customer base and increase revenue.",
+    "job_responsibility": "Identify and contact potential customers; Meet sales quotas and goals; Develop and maintain relationships with clients.",
+    "educational_requirements": "Bachelor's degree in Business Administration or a related field",
+    "experiences": "2+ years of experience in sales",
+    "contact_information": {
+      "phone": "+1-123-456-7890",
+      "email": "jobs@sunriseinc.com"
+    }
+  },
+  {
+    "id": 6,
+    "company_logo": "https://example.com/logo6.png",
+    "job_title": "Content Writer",
+    "company_name": "Global Media",
+    "remote_or_onsite": "Remote",
+    "location": "Anywhere",
+    "fulltime_or_parttime": "Part-time",
+    "salary": "$25 - $40 per hour",
+    "job_description": "We are seeking a talented Content Writer to help us create compelling and informative content for our clients.",
+    "job_responsibility": "Research and write high-quality content for various topics and industries; Collaborate with the creative team to develop content strategies; Edit and proofread content to ensure accuracy and consistency.",
+    "educational_requirements": "Bachelor's degree in Journalism, Communications, or a related field",
+    "experiences": "2+ years of experience in content writing",
+    "contact_information": {
+      "phone": "+1-123-456-7890",
+      "email": "jobs@globalmedia.com"
+    }
+  }
+]
