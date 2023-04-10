@@ -4,7 +4,7 @@ import Job from "./Job";
 
 const FeaturedJobs = (props) => {
   const featuredJobs = props.featuredJobs;
-  const [jobs, setJobs] = useState([]);
+  const [showAll, setShowAll] = useState(false);
   return (
     <div className="px-[10%] ">
       <SectionTitle
@@ -12,13 +12,19 @@ const FeaturedJobs = (props) => {
         tag="THis is a job feature job details"
       />
       <div className="grid grid-cols-2">
-        {featuredJobs.map((featuredJob) => (
-          <Job key={featuredJob.id} featuredJob={featuredJob} />
-        ))}
+        {featuredJobs
+          .slice(0, showAll ? featuredJobs.length : 4)
+          .map((featuredJob) => (
+            <Job key={featuredJob.id} featuredJob={featuredJob} />
+          ))}
       </div>
-      <div className="text-center">
-        <button className="my-btn">See All Jobs</button>
-      </div>
+      {!showAll && (
+        <div className="text-center">
+          <button className="my-btn" onClick={() => setShowAll(true)}>
+            See All Jobs
+          </button>
+        </div>
+      )}
     </div>
   );
 };

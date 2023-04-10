@@ -16,7 +16,7 @@ const JobCategory = (props) => {
       />
       <div className="flex justify-between gap-4">
         {availableJobs.map((jobs) => (
-          <div className="bg-violet-100 w-full">
+          <div className="bg-violet-100 w-full" key={jobs.id}>
             <img src={jobs.logo} alt="" className="w-24" />
             <p>{jobs.name}</p>
             <p>{jobs.jobs_available} Jobs Available</p>

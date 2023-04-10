@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Job = (props) => {
   const {
+    id,
     company_logo,
     job_title,
     company_name,
@@ -10,6 +12,9 @@ const Job = (props) => {
     fulltime_or_parttime,
     salary,
   } = props.featuredJob;
+  const getJobId = (id) => {
+    console.log(id);
+  };
   return (
     <div>
       <img src={company_logo} alt="" />
@@ -23,7 +28,9 @@ const Job = (props) => {
         <p>{location}</p>
         <p>Salary: {salary}</p>
       </div>
-      <button className="my-btn">View Details</button>
+      <Link className="my-btn" to={`/job-details/${job_title}`}>
+        View Details
+      </Link>
     </div>
   );
 };
