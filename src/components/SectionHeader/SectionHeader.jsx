@@ -4,7 +4,7 @@ import vector from "../../assets/Images/Vector.png";
 
 const SectionHeader = ({ children }) => {
   return (
-    <div className="relative bg-[url('./assets/Images/common-bg.png')] h-56 flex justify-center items-center">
+    <div className="text-2xl font-semibold relative bg-[url('./assets/Images/common-bg.png')] h-56 flex justify-center items-center">
       <div className="absolute -top-[38%] right-0">
         <img src={vector1} alt="" />
       </div>

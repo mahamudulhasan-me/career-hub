@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "company_logo": "./company/google-1-1 1.png",
     "job_title": "Software Engineer",
     "company_name": "Google",
@@ -14,11 +14,12 @@
     "experiences": "2+ years of experience in software engineering",
     "contact_information": {
       "phone": "+1-123-456-7890",
-      "email": "jobs@acme.com"
+      "email": "jobs@acme.com",
+      "address": "15 Rue de la Paix, 75001 Paris, France"
     }
   },
   {
-    "id": 2,
+    "id": "2",
     "company_logo": "./company/netflix-4 1.png",
     "job_title": "Marketing Manager",
     "company_name": "Netflix",
@@ -32,11 +33,12 @@
     "experiences": "5+ years of experience in marketing",
     "contact_information": {
       "phone": "+1-123-456-7890",
-      "email": "jobs@abccorp.com"
+      "email": "jobs@abccorp.com",
+      "address": "555 Collins St, Melbourne VIC 3000, Australia"
     }
   },
   {
-    "id": 3,
+    "id": "3",
     "company_logo": "./company/tesla-9 1.png",
     "job_title": "Data Analyst",
     "company_name": "Tesla",
@@ -50,11 +52,12 @@
     "experiences": "2+ years of experience in data analysis",
     "contact_information": {
       "phone": "+1-123-456-7890",
-      "email": "jobs@xyzcorp.com"
+      "email": "jobs@xyzcorp.com",
+      "address": "123 Main St, New York, NY 10001, USA"
     }
   },
   {
-    "id": 4,
+    "id": "4",
     "company_logo": "./company/Group 10021.png",
     "job_title": "Graphic Designer",
     "company_name": "Air BNB",
@@ -68,11 +71,12 @@
     "experiences": "3+ years of experience in graphic design",
     "contact_information": {
       "phone": "+1-123-456-7890",
-      "email": "jobs@123designs.com"
+      "email": "jobs@123designs.com",
+      "address": "456 Maple Ave, Los Angeles, CA 90001, USA"
     }
   },
   {
-    "id": 5,
+    "id": "5",
     "company_logo": "https://example.com/logo5.png",
     "job_title": "Sales Representative",
     "company_name": "Sunrise Inc.",
@@ -86,11 +90,12 @@
     "experiences": "2+ years of experience in sales",
     "contact_information": {
       "phone": "+1-123-456-7890",
-      "email": "jobs@sunriseinc.com"
+      "email": "jobs@sunriseinc.com",
+      "address": "789 Oak St, Chicago, IL 60601, USA"
     }
   },
   {
-    "id": 6,
+    "id": "6",
     "company_logo": "https://example.com/logo6.png",
     "job_title": "Content Writer",
     "company_name": "Global Media",
@@ -104,7 +109,8 @@
     "experiences": "2+ years of experience in content writing",
     "contact_information": {
       "phone": "+1-123-456-7890",
-      "email": "jobs@globalmedia.com"
+      "email": "jobs@globalmedia.com",
+      "address": "101 Main St, Toronto, ON M5X 1A1, Canada"
     }
   }
 ]
