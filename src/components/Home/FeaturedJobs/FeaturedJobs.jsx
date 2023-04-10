@@ -9,14 +9,15 @@ const FeaturedJobs = (props) => {
     <div className="px-[10%] ">
       <SectionTitle
         title="Featured Jobs"
-        tag="THis is a job feature job details"
+        tag="This is a job feature job details"
       />
       <div className="grid grid-cols-2">
-        {featuredJobs
-          .slice(0, showAll ? featuredJobs.length : 4)
-          .map((featuredJob) => (
-            <Job key={featuredJob.id} featuredJob={featuredJob} />
-          ))}
+        {featuredJobs &&
+          featuredJobs
+            ?.slice(0, showAll ? featuredJobs.length : 4)
+            .map((featuredJob) => (
+              <Job key={featuredJob.id} featuredJob={featuredJob} />
+            ))}
       </div>
       {!showAll && (
         <div className="text-center">

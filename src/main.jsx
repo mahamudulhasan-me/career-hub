@@ -3,10 +3,12 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import AppliedJobs from "./components/AppliedJobs/AppliedJobs";
+import Blog from "./components/Blog/Blog";
 import Home from "./components/Home/Home";
 import JobDetails from "./components/JobDetails/JobDetails";
 import Statistics from "./components/Statistics/Statistics";
 import "./index.css";
+import { loadAllJobs } from "./LoadFeaturedJobs/LoadAllJobs";
 import { LoadFeaturedJobs } from "./LoadFeaturedJobs/LoadFeaturedJobs";
 
 const router = createBrowserRouter([
@@ -27,16 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/job-details/:job_title",
         element: <JobDetails />,
-        loader: async ({ params }) => {
-          const job = await fetch("availableJobDetails.json");
-          const jobDetails = await job.json();
-          const data = jobDetails.find(
-            (job) => job.job_title === params.job_title
-          );
-          return data;
-        },
+        loader: ({ params }) => loadAllJobs(params.job_title),
       },
       { path: "statistics", element: <Statistics /> },
+      { path: "blog", element: <Blog /> },
     ],
   },
 ]);

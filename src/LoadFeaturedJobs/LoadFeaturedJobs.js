@@ -1,7 +1,7 @@
 import { getDataFromLocalStorage } from "../StorageFunctionality/StorageFunctionality";
 
 const LoadFeaturedJobs = async () => {
-  const response = await fetch("availableJobDetails.json");
+  const response = await fetch("/availableJobDetails.json");
   const allJobs = await response.json();
   const getDataFromDb = getDataFromLocalStorage();
   let appliedJobs = [];
