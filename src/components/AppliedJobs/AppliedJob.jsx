@@ -12,9 +12,9 @@ const AppliedJob = (props) => {
     salary,
   } = props.job;
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-center border p-5">
       <div className="flex items-center gap-8">
-        <div className="w-60 h-60  bg-[#F4F4F4] flex items-center justify-center">
+        <div className="w-52 h-52  bg-[#F4F4F4] flex items-center justify-center">
           <img src={company_logo} alt="" />
         </div>
         <div>
