@@ -36,6 +36,9 @@ li {
 .my-border {
   @apply border w-20 h-8 flex justify-center rounded-sm mt-3 mb-2 items-center mr-3 border-indigo-600;
 }
+.my-border2 {
+  @apply border px-5 h-8 flex justify-center rounded-sm mt-3 mb-2 items-center mr-3 border-indigo-600;
+}
 .my-btn2 {
   @apply main-btn  border-2  rounded-md border-indigo-600 transition-all duration-75  hover:text-white  hover:bg-gradient-to-r from-purple-400 to-indigo-600;
 }

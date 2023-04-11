@@ -1,3 +1,5 @@
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import SectionHeader from "../SectionHeader/SectionHeader";
@@ -14,6 +16,7 @@ const AppliedJobs = () => {
       )
     );
   };
+  const resetFilter = () => setFilterJob(appliedJobs);
   const filterByOnsite = () => {
     setFilterJob(
       appliedJobs.map((job) =>
@@ -26,9 +29,9 @@ const AppliedJobs = () => {
       <SectionHeader>Applied Jobs</SectionHeader>
       <div className="px-[20%] mx-auto mt-10">
         <div className="text-right my-10">
-          <div className="dropdown dropdown-top dropdown-end">
-            <label tabIndex={0} className="px-10 py-5 border m-1">
-              Filter By
+          <div className="dropdown dropdown-bottom dropdown-end">
+            <label tabIndex={0} className="px-10 py-5 my-border2 m-1">
+              Filter By <FontAwesomeIcon icon={faChevronDown} />
             </label>
             <ul
               tabIndex={0}
@@ -39,6 +42,9 @@ const AppliedJobs = () => {
               </li>
               <li>
                 <a onClick={filterByOnsite}>Onsite</a>
+              </li>
+              <li>
+                <a onClick={resetFilter}>Reset</a>
               </li>
             </ul>
           </div>
