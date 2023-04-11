@@ -1,3 +1,11 @@
+import {
+  faAddressCard,
+  faBriefcase,
+  faCircleDollarToSlot,
+  faEnvelope,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 import { addDataToLocalStorage } from "../../StorageFunctionality/StorageFunctionality";
@@ -25,8 +33,8 @@ const JobDetails = () => {
   return (
     <div className="">
       <SectionHeader>Job Details</SectionHeader>
-      <div className="grid grid-cols-3 justify-between px-[10%]">
-        <div className="col-span-2">
+      <div className="grid grid-cols-3 gap-5 px-[15%] my-14">
+        <div className="col-span-2 space-y-4">
           <p>
             <strong>Job Description:</strong>
             {job_description}
@@ -45,30 +53,59 @@ const JobDetails = () => {
           </div>
         </div>
         <div>
-          <div>
-            <p>Job Details</p>
-            <h5>
-              <strong>Salary: </strong> {salary}
-            </h5>
-            <h5>
-              <strong>Job Title: </strong>
-              {job_title}
-            </h5>
-          </div>
-          <div>
-            <p>Contact Information</p>
-            <h5>
-              <strong>Phone: </strong> {contact_information?.phone}
-            </h5>
-            <h5>
-              <strong>Email: </strong> {contact_information?.email}
-            </h5>
-            <h5>
-              <strong>Address: </strong> {contact_information?.address}
-            </h5>
+          <div className="bg-violet-100 p-6 rounded-md">
+            <div>
+              <p className="pb-3 mb-3 text-slate-900 text-lg font-semibold border-b-2 border-violet-400">
+                Job Details
+              </p>
+              <p>
+                <strong>
+                  <FontAwesomeIcon
+                    className="icon"
+                    icon={faCircleDollarToSlot}
+                  />{" "}
+                  Salary:{" "}
+                </strong>{" "}
+                {salary}
+              </p>
+              <p className="mt-1">
+                <strong>
+                  <FontAwesomeIcon className="icon" icon={faBriefcase} /> Job
+                  Title:{" "}
+                </strong>
+                {job_title}
+              </p>
+            </div>
+            <div>
+              <p className="pb-3 mt-4 mb-3 text-slate-900 text-lg font-semibold border-b-2 border-violet-400">
+                Contact Information
+              </p>
+              <div className="space-y-1">
+                <h5>
+                  <strong>
+                    <FontAwesomeIcon className="icon" icon={faPhone} /> Phone:{" "}
+                  </strong>{" "}
+                  {contact_information?.phone}
+                </h5>
+                <h5>
+                  <strong>
+                    <FontAwesomeIcon className="icon" icon={faEnvelope} />{" "}
+                    Email:{" "}
+                  </strong>{" "}
+                  {contact_information?.email}
+                </h5>
+                <h5>
+                  <strong>
+                    <FontAwesomeIcon className="icon" icon={faAddressCard} />{" "}
+                    Address:{" "}
+                  </strong>{" "}
+                  {contact_information?.address}
+                </h5>
+              </div>
+            </div>
           </div>
           <button
-            className="my-btn w-full"
+            className="apply-btn"
             onClick={() => getJobTitle(id, job_title)}
           >
             Apply Now

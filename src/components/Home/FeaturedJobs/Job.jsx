@@ -1,3 +1,8 @@
+import {
+  faCircleDollarToSlot,
+  faLocationDot,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -12,23 +17,32 @@ const Job = (props) => {
     fulltime_or_parttime,
     salary,
   } = props.featuredJob;
-  const getJobId = (id) => {
-    console.log(id);
-  };
   return (
-    <div>
+    <div className="transition duration-0 hover:duration-700 ease-in-out hover:bg-[url('./assets/Images/common-bg3.png')]  bg-cover border border-indigo-300  p-5 rounded-md">
       <img src={company_logo} alt="" />
-      <h1>{job_title}</h1>
-      <h2>{company_name}</h2>
+      <h1 className="text-xl mt-6 ">{job_title}</h1>
+      <h2 className="text-slate-700">{company_name}</h2>
       <div className="flex">
-        <p>{remote_or_onsite}</p>
-        <p>{fulltime_or_parttime}</p>
+        <p className="my-border">{remote_or_onsite}</p>
+        <p className="my-border">{fulltime_or_parttime}</p>
       </div>
-      <div className="flex">
-        <p>{location}</p>
-        <p>Salary: {salary}</p>
+      <div className="flex items-center gap-4 mb-4">
+        <p>
+          <FontAwesomeIcon
+            icon={faLocationDot}
+            className="text-xl text-slate-500"
+          />{" "}
+          {location}
+        </p>
+        <p>
+          <FontAwesomeIcon
+            className="text-xl text-slate-500"
+            icon={faCircleDollarToSlot}
+          />{" "}
+          Salary: {salary}
+        </p>
       </div>
-      <Link className="my-btn" to={`/job-details/${job_title}`}>
+      <Link className="my-btn2" to={`/job-details/${job_title}`}>
         View Details
       </Link>
     </div>

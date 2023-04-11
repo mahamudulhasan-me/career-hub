@@ -5,13 +5,14 @@ import Job from "./Job";
 const FeaturedJobs = (props) => {
   const featuredJobs = props.featuredJobs;
   const [showAll, setShowAll] = useState(false);
+  // bg-[url('./assets/Images/common-bg2.png'),url('./assets/Images/common-bg3.png')] bg-left-top bg-no-repeat bg-cover
   return (
-    <div className="px-[10%] ">
+    <div className="px-[10%] mt-20 py-8 ">
       <SectionTitle
         title="Featured Jobs"
-        tag="This is a job feature job details"
+        tag="Explore thousands of job opportunities with all the information you need. Its your future"
       />
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-2 gap-10">
         {featuredJobs &&
           featuredJobs
             ?.slice(0, showAll ? featuredJobs.length : 4)
@@ -20,11 +21,12 @@ const FeaturedJobs = (props) => {
             ))}
       </div>
       {!showAll && (
-        <div className="text-center">
-          <button className="my-btn" onClick={() => setShowAll(true)}>
-            See All Jobs
-          </button>
-        </div>
+        <button
+          className="my-btn mx-auto mt-8"
+          onClick={() => setShowAll(true)}
+        >
+          See All Jobs
+        </button>
       )}
     </div>
   );
