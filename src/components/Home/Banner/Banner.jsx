@@ -8,7 +8,7 @@ const Banner = () => {
           One Step Closer <br /> To Your <br />
           <span className="primary-clr"> Dream Job</span>
         </h1>
-        <h4 className="mt-12 mb-4 w-4/5 font-medium text-slate-600">
+        <h4 className="mt-12 mb-4 w-4/5 font-medium text-slate-600 text-lg">
           Explore thousands of job opportunities with all the information you
           need. Its your future. Come find it. Manage all your job application
           from start to finish.

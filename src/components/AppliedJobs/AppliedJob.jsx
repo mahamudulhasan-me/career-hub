@@ -1,3 +1,8 @@
+import {
+  faCircleDollarToSlot,
+  faLocationDot,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -15,19 +20,31 @@ const AppliedJob = (props) => {
   return (
     <div className="flex justify-between items-center border p-5">
       <div className="flex items-center gap-8">
-        <div className="w-52 h-52  bg-[#F4F4F4] flex items-center justify-center">
+        <div className="w-48 h-48  bg-[#F4F4F4] flex items-center justify-center">
           <img src={company_logo} alt="" />
         </div>
         <div>
-          <h2>{job_title}</h2>
-          <p>{company_name}</p>
+          <h2 className="text-xl mt-6 ">{job_title}</h2>
+          <p className="text-slate-700">{company_name}</p>
           <div className="flex">
-            <p>{remote_or_onsite}</p>
-            <p>{fulltime_or_parttime}</p>
+            <p className="my-border">{remote_or_onsite}</p>
+            <p className="my-border">{fulltime_or_parttime}</p>
           </div>
-          <div className="flex">
-            <p>{location}</p>
-            <p>{salary}</p>
+          <div className="flex text-center gap-4 mt-2">
+            <p>
+              <FontAwesomeIcon
+                icon={faLocationDot}
+                className="text-xl text-slate-500"
+              />
+              {location}
+            </p>
+            <p>
+              <FontAwesomeIcon
+                className="text-xl text-slate-500"
+                icon={faCircleDollarToSlot}
+              />
+              {salary}
+            </p>
           </div>
         </div>
       </div>

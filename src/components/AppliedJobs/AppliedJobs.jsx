@@ -50,8 +50,14 @@ const AppliedJobs = () => {
           </div>
         </div>
         <div className="space-y-10">
-          {filterJob.map((job) =>
-            job.map((job) => <AppliedJob key={job.id} job={job} />)
+          {filterJob.length ? (
+            filterJob.map((job) =>
+              job.map((job) => <AppliedJob key={job.id} job={job} />)
+            )
+          ) : (
+            <p className="text-center text-rose-400">
+              No jobs have been applied to yet
+            </p>
           )}
         </div>
       </div>
