@@ -35,9 +35,9 @@ const Statistics = () => {
           </AreaChart>
         </ResponsiveContainer>
         <p className="mt-4">
-          <strong className="underline">N.B.</strong> I have full marks in all
-          my assignments but I have reduced the marks to make the chart a bit
-          more manageable [In my opinion].
+          <strong className="underline">N. B.</strong> I have full marks in all
+          my assignments but I have reduced the marks To look like a chart [In
+          my opinion].
         </p>
       </div>
     </div>
