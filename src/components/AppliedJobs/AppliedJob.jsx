@@ -7,7 +7,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const AppliedJob = (props) => {
-  console.log(props.job);
   const {
     company_logo,
     job_title,
