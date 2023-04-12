@@ -11,6 +11,7 @@ const addDataToLocalStorage = (id, jobTitle) => {
   let newJob = appliedJobs[id];
   if (!newJob) {
     appliedJobs[id] = jobTitle;
+    toast("Successfully applied");
   } else {
     toast(`Already applied for the post of ${jobTitle}`);
   }

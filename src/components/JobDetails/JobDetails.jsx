@@ -33,8 +33,8 @@ const JobDetails = () => {
   return (
     <div className="">
       <SectionHeader>Job Details</SectionHeader>
-      <div className="grid grid-cols-3 gap-5 px-[15%] my-14">
-        <div className="col-span-2 space-y-4">
+      <div className="md:grid md:grid-cols-3 gap-5 md:px-[15%] px-[5%] my-14">
+        <div className="col-span-2 space-y-4 md:mb-0 mb-4">
           <p>
             <strong>Job Description:</strong>
             {job_description}

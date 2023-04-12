@@ -16,7 +16,7 @@ const Statistics = () => {
   return (
     <div>
       <SectionHeader>Statistics</SectionHeader>
-      <div className="px-[15%] my-10">
+      <div className="md:px-[15%] px-[5%] my-10">
         <h4 className="text-2xl underline font-semibold mb-3">
           Statistics by Assignment Marks:
         </h4>

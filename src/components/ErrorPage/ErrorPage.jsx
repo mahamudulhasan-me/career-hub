@@ -5,7 +5,7 @@ import page404 from "../../assets/Images/404.png";
 const ErrorPage = () => {
   const { error, status } = useRouteError();
   return (
-    <div className="bg-[url('./assets/Images/404-bg.png')] bg-cover h-screen flex flex-col justify-center space-y-4 items-center">
+    <div className="md:px-[35%] px-[20%] bg-[url('./assets/Images/404-bg.png')] bg-cover h-screen flex flex-col justify-center space-y-4 items-center">
       <img src="/logo.svg" alt="" className="w-40" />
       <img src={page404} alt="" />
       <h1 className="text-3xl font-medium text-[#FF5364]">

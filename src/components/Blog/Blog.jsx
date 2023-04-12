@@ -9,7 +9,7 @@ const Blog = () => {
       <div className="   my-12 md:px-[15%] px-[5%]">
         <div className="space-y-4">
           <Answer
-            question={"How Does React work?"}
+            question={"When should you use context API?"}
             answer={
               <p>
                 React is a JavaScript library for rendering the user interface.
@@ -23,7 +23,7 @@ const Blog = () => {
             }
           />
           <Answer
-            question={"Difference between props vs state."}
+            question={"What is a custom hook?"}
             answer={
               <p>
                 Both props and state are used to manage data in React, but they
@@ -43,7 +43,7 @@ const Blog = () => {
             }
           />
           <Answer
-            question={"How does useState work?"}
+            question={"What is useRef?"}
             answer={
               <p>
                 In React's <strong>useState()</strong> is a hook, that is used
@@ -56,7 +56,7 @@ const Blog = () => {
             }
           />
           <Answer
-            question={"Purpose of useEffect other than fetching data."}
+            question={"What is useMemo?"}
             answer={
               <p>
                 <strong> useEffect()</strong> is usually used to fetch the data.

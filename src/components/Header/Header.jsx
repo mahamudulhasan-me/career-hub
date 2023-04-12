@@ -48,21 +48,23 @@ const Header = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu-horizontal px-1 space-x-5">
           <li>
-            <ActiveLink to={"./"}>Home</ActiveLink>
+            <ActiveLink to={"/"}>Home</ActiveLink>
           </li>
           <li>
-            <ActiveLink to={"./applied-jobs"}>Applied Jobs</ActiveLink>
+            <ActiveLink to={"/applied-jobs"}>Applied Jobs</ActiveLink>
           </li>
           <li>
-            <ActiveLink to={"./statistics"}>Statistics</ActiveLink>
+            <ActiveLink to={"/statistics"}>Statistics</ActiveLink>
           </li>
           <li>
-            <ActiveLink to={"./blog"}>Blog</ActiveLink>
+            <ActiveLink to={"/blog"}>Blog</ActiveLink>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="my-btn">Get started</a>
+        <Link className="my-btn" to={"/"}>
+          Get started
+        </Link>
       </div>
     </div>
   );
