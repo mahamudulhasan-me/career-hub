@@ -16,23 +16,29 @@ const Statistics = () => {
   return (
     <div>
       <SectionHeader>Statistics</SectionHeader>
-      <div className="px-[20%]">
-        <h4>Statistics by Assignment Marks</h4>
+      <div className="px-[15%] my-10">
+        <h4 className="text-2xl underline font-semibold mb-3">
+          Statistics by Assignment Marks:
+        </h4>
         <ResponsiveContainer width="100%" height={300}>
-          <AreaChart
-            width={500}
-            height={10000}
-            data={data}
-            syncId="anyId"
-            className="bg-[url('./assets/Images/common-bg.png')]"
-          >
-            <CartesianGrid strokeDasharray="3 3" />
+          <AreaChart data={data}>
+            <CartesianGrid strokeDasharray="4 4" stroke="#6366f1" />
             <XAxis dataKey="name" />
             <YAxis />
             <Tooltip />
-            <Area type="monotone" dataKey="marks" stroke="#8884d8" />
+            <Area
+              type="linear"
+              dataKey="Marks"
+              stroke="#4338ca"
+              fill="#ddd6fe"
+            />
           </AreaChart>
         </ResponsiveContainer>
+        <p className="mt-4">
+          <strong className="underline">N.B.</strong> I have full marks in all
+          my assignments but I have reduced the marks to make the chart a bit
+          more manageable [In my opinion].
+        </p>
       </div>
     </div>
   );

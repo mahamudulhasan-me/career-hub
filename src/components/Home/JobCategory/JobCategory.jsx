@@ -25,7 +25,7 @@ const JobCategory = (props) => {
             </figure>
             <h3 className="text-xl mt-5">{jobs.name}</h3>
             <p>
-              <span className="text-red-400 underline mx-1">
+              <span className="text-red-400 underline mx-1 cursor-pointer">
                 {jobs.jobs_available}
               </span>{" "}
               Jobs Available

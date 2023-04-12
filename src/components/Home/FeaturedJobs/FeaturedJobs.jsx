@@ -7,7 +7,7 @@ const FeaturedJobs = (props) => {
   const [showAll, setShowAll] = useState(false);
   // bg-[url('./assets/Images/common-bg2.png'),url('./assets/Images/common-bg3.png')] bg-left-top bg-no-repeat bg-cover
   return (
-    <div className="px-[10%] mt-20 py-8 ">
+    <div className="px-[10%] my-10 ">
       <SectionTitle
         title="Featured Jobs"
         tag="Explore thousands of job opportunities with all the information you need. Its your future"
