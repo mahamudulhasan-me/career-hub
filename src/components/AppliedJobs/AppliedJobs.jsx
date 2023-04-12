@@ -27,7 +27,7 @@ const AppliedJobs = () => {
   return (
     <div>
       <SectionHeader>Applied Jobs</SectionHeader>
-      <div className="px-[20%] mx-auto mt-10">
+      <div className="md:px-[20%] px-[5%] mx-auto mt-10">
         <div className="text-right my-10">
           <div className="dropdown dropdown-bottom dropdown-end">
             <label tabIndex={0} className="px-10 py-5 my-border2 m-1">

@@ -28,14 +28,16 @@ const Header = () => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Item 1</a>
+              <ActiveLink to={"./"}>Home</ActiveLink>
             </li>
             <li>
-              <a>Item 1</a>
+              <ActiveLink to={"./applied-jobs"}>Applied Jobs</ActiveLink>
             </li>
-
             <li>
-              <a>Item 3</a>
+              <ActiveLink to={"./statistics"}>Statistics</ActiveLink>
+            </li>
+            <li>
+              <ActiveLink to={"./blog"}>Blog</ActiveLink>
             </li>
           </ul>
         </div>

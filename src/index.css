@@ -15,6 +15,12 @@ h3 {
 p {
   @apply font-medium text-slate-600;
 }
+footer p {
+  @apply font-normal text-white;
+}
+footer h3 {
+  @apply text-2xl font-normal mb-5;
+}
 li {
   @apply hover:text-rose-600 font-semibold;
 }

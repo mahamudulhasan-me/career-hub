@@ -12,7 +12,7 @@ const FeaturedJobs = (props) => {
         title="Featured Jobs"
         tag="Explore thousands of job opportunities with all the information you need. Its your future"
       />
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid md:grid-cols-2 gap-10">
         {featuredJobs &&
           featuredJobs
             ?.slice(0, showAll ? featuredJobs.length : 4)

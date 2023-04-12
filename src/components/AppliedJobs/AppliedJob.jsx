@@ -18,19 +18,19 @@ const AppliedJob = (props) => {
     salary,
   } = props.job;
   return (
-    <div className="flex justify-between items-center border p-5 rounded-md">
-      <div className="flex items-center gap-8">
+    <div className="flex md:flex-row justify-between items-center border p-5 rounded-md flex-col">
+      <div className="flex md:flex-row flex-col items-center gap-8">
         <div className="w-48 h-48  bg-[#F4F4F4] flex items-center justify-center rounded-md">
           <img src={company_logo} alt="" />
         </div>
         <div>
-          <h2 className="text-xl mt-6 ">{job_title}</h2>
+          <h2 className="text-xl md:mt-6 ">{job_title}</h2>
           <p className="text-slate-700">{company_name}</p>
-          <div className="flex">
+          <div className="flex ">
             <p className="my-border">{remote_or_onsite}</p>
             <p className="my-border">{fulltime_or_parttime}</p>
           </div>
-          <div className="flex text-center gap-4 mt-2">
+          <div className="flex text-center gap-4 mt-2 md:mb-0 mb-2">
             <p>
               <FontAwesomeIcon
                 icon={faLocationDot}
