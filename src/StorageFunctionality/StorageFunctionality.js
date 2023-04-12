@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 const addDataToLocalStorage = (id, jobTitle) => {
   let appliedJobs = {};
   const isAppliedJobAvailable = localStorage.getItem("applied-jobs");
@@ -9,6 +11,8 @@ const addDataToLocalStorage = (id, jobTitle) => {
   let newJob = appliedJobs[id];
   if (!newJob) {
     appliedJobs[id] = jobTitle;
+  } else {
+    toast(`Already applied for the post of ${jobTitle}`);
   }
   localStorage.setItem("applied-jobs", JSON.stringify(appliedJobs));
 };

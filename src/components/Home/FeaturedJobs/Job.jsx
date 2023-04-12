@@ -19,7 +19,7 @@ const Job = (props) => {
   } = props.featuredJob;
   return (
     <div className="transition duration-0 hover:duration-700 ease-in-out hover:bg-[url('./assets/Images/common-bg3.png')]  bg-cover border border-indigo-300  p-5 rounded-md">
-      <img src={company_logo} alt="" />
+      <img src={company_logo} alt="" className="w-44 bg-transparent" />
       <h1 className="text-xl mt-6 ">{job_title}</h1>
       <h2 className="text-slate-700">{company_name}</h2>
       <div className="flex">

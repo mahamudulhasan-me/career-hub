@@ -40,7 +40,7 @@ const Header = () => {
           </ul>
         </div>
         <Link to={"./"}>
-          <img src="logo.svg" alt="" className="w-40" />
+          <img src="/logo.svg" alt="" className="w-40" />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
