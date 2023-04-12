@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="border-t  border-slate-400 flex justify-between text-sm">
+      <div className="border-t  border-slate-400 flex justify-between text-xs pt-3">
         <p>Ⓒ 2023 Dreams LMS. All Rights Reserved</p>
         <p>Powered by CareerHub</p>
       </div>

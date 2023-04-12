@@ -23,8 +23,12 @@ const Job = (props) => {
       <h1 className="text-xl mt-6 ">{job_title}</h1>
       <h2 className="text-slate-700">{company_name}</h2>
       <div className="flex">
-        <p className="my-border">{remote_or_onsite}</p>
-        <p className="my-border">{fulltime_or_parttime}</p>
+        <p className="my-border">
+          <span className="primary-clr">{remote_or_onsite}</span>
+        </p>
+        <p className="my-border">
+          <span className="primary-clr">{fulltime_or_parttime}</span>
+        </p>
       </div>
       <div className="flex items-center gap-4 mb-4">
         <p>
@@ -43,7 +47,7 @@ const Job = (props) => {
         </p>
       </div>
       <Link className="my-btn2" to={`/job-details/${job_title}`}>
-        View Details
+        <span>View Details</span>
       </Link>
     </div>
   );

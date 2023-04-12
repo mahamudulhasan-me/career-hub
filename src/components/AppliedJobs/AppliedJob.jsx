@@ -27,8 +27,12 @@ const AppliedJob = (props) => {
           <h2 className="text-xl md:mt-6 ">{job_title}</h2>
           <p className="text-slate-700">{company_name}</p>
           <div className="flex ">
-            <p className="my-border">{remote_or_onsite}</p>
-            <p className="my-border">{fulltime_or_parttime}</p>
+            <p className="my-border">
+              <span className="primary-clr">{remote_or_onsite}</span>
+            </p>
+            <p className="my-border">
+              <span className="primary-clr">{fulltime_or_parttime}</span>
+            </p>
           </div>
           <div className="flex text-center gap-4 mt-2 md:mb-0 mb-2">
             <p>
