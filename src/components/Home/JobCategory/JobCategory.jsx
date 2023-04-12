@@ -12,7 +12,7 @@ const JobCategory = (props) => {
     <div className="px-[10%] md:my-20">
       <SectionTitle
         title="Job Category List"
-        tag="Explore thousands of job opportunities with all the information you need. Its your future"
+        tag="You choose your category job and vExplore thousands of job opportunities with all the information you need. Its your future"
       />
       <div className="flex md:flex-row flex-col justify-between gap-6">
         {availableJobs.map((jobs) => (
